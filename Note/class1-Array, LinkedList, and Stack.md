@@ -10,7 +10,7 @@
 
 ## 1. 数组
 
-![image-20210621222530310](/image-20210621222530310.png)
+![image-20210621222530310](./img/image-20210621222530310.png)
 
 ==数组操作时间复杂度：==
 
@@ -138,12 +138,12 @@ sort(vec.begin(), vec.end(), Comp);
 
 #### 单链表
 
-![image-20210621222619293](/C:/Users/59384/AppData/Roaming/Typora/typora-user-images/image-20210621222619293.png)
+![image-20210622171340825](./img/image-20210622171340825-1624396423554.png)
 
 - 插入
-- ![image-20210621222742751](/image-20210621222742751.png)
+- ![image-20210621222742751](./img/image-20210621222742751.png)
 - 删除
-- ![image-20210621222802662](/image-20210621222802662.png)
+- ![image-20210621222802662](./img/image-20210621222802662.png)
 - Note:
 
 知识点简单，主要是多联系熟悉一下。
@@ -158,7 +158,7 @@ ListNode protect = new ListNode(0, head); // (value, ->next)
 
 #### 双链表
 
-![image-20210621223059792](/image-20210621223059792.png)
+![image-20210621223059792](./img/image-20210621223059792.png)
 
 - 双向链表，双保护节
 
@@ -174,7 +174,7 @@ ListNode protect = new ListNode(0, head); // (value, ->next)
 What is Stack?
 
 - First in, Last out
-- ![image-20210621223317071](/image-20210621223317071.png)
+- ![image-20210621223317071](./img/image-20210621223317071.png)
 
 ==时间复杂度==
 
@@ -211,12 +211,12 @@ stack<int, vector<int> > mystack2;
 **What is queue**
 
 - (FIFO)First in, First out
-- ![image-20210621223411918](/image-20210621223411918.png)
+- ![image-20210621223411918](./img/image-20210621223411918.png)
 
 **双端队列**
 
 - 两边都可以进和出, e.g., Python list
-- ![image-20210621223605327](/image-20210621223605327.png)
+- ![image-20210621223605327](./img/image-20210621223605327.png)
 
 **优先队列（priority queue)**
 
@@ -533,7 +533,7 @@ https://leetcode-cn.com/problems/linked-list-cycle/
 * Hashmap解法：
   * 把链表过一遍，每个碰到的node，用一个hashmap来存，没次存的时候检测时候存过了，有相同，则说明有环；如果到最后都没有conflict，就说明无环。==》O(1) time, O(n) space, 
 * 快慢指针 ==》O(n) time, O（1）space,
-  * ![image-20210621213403604](/image-20210621213403604.png)
+  * ![image-20210621213403604](./img/image-20210621213403604.png)
   * 相遇了则返回有环，不相遇返回无环
   * 有环必定发生套圈（快慢指针相遇），无环不会发生套圈（快指针会先到达null，然后停下来)
   * 跟跑步套圈一样的。两个人跑步，跑得快的到终点了但没套圈，说明跑的时圆形的跑到；但如果套圈了，或再次碰上了，就说明跑的时圆形的跑道。
@@ -542,7 +542,7 @@ https://leetcode-cn.com/problems/linked-list-cycle/
 #### 142.环形链表II mid (不用掌握，就一数学题)
 https://leetcode-cn.com/problems/linked-list-cycle-ii/
 
-* ![image-20210621220812275](/image-20210621220812275.png)
+* ![image-20210621220812275](./img/image-20210621220812275.png)
 * 根据：
   fast = 2s （快指针每次2步，路程刚好2倍）
   fast = s + nb (相遇时，刚好多走了n圈）
@@ -617,7 +617,7 @@ https://leetcode-cn.com/problems/reverse-nodes-in-k-group/
 
 * 分组，找到每一组的开始、结尾。按组遍历
 
-  * ![image-20210621212949601](/image-20210621120451261.png)
+  * ![image-20210621212949601](./img/image-20210621120451261.png)
 
 * Get endNode
 
@@ -634,7 +634,7 @@ https://leetcode-cn.com/problems/reverse-nodes-in-k-group/
 
 * 反转一组
 
-  * ![image-20210621212839155](/image-20210621212839155.png)
+  * ![image-20210621212839155](./img/image-20210621212839155.png)
 
 * 上一组跟本组的head（旧的end）建立联系
 
@@ -650,7 +650,7 @@ https://leetcode-cn.com/problems/valid-parentheses/
 * 建立一个栈
 * 左括号push,右括号和top比较。不对应就false，对应就pop
 * 注意if嵌套关系，和判断pop后的空栈情况
-* ![image-20210621230644336](/image-20210621230644336.png)
+* ![image-20210621230644336](./img/image-20210621230644336.png)
 
 #### 155.最小栈 medium
 https://leetcode-cn.com/problems/min-stack/
@@ -711,8 +711,8 @@ https://leetcode-cn.com/problems/basic-calculator/
 - 对应leetcode：一个程序，三道题都可以解决，可以背 模板
 
   - https://leetcode-cn.com/problems/basic-calculator-ii/
-  - ![image-20210621234221057](/image-20210621234221057.png)
-  - ![image-20210621234505866](/image-20210621234505866.png)
+  - ![image-20210621234221057](./img/image-20210621234221057.png)
+  - ![image-20210621234505866](./img/image-20210621234505866.png)
   - https://leetcode-cn.com/problems/basic-calculator/
   - 
 
