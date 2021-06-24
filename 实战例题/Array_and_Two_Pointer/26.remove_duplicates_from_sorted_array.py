@@ -23,15 +23,20 @@ class Solution:
         return f+1
         
     def removeDuplicates_v2(self, nums: List[int]) -> int:
+        """
+            Input: nums = [0,0,1,1,1,2,2,3,3,4]
+            Output: 5, nums = [0,1,2,3,4,_,_,_,_,_]
+            Explanation: Your function should return k = 5, with the first five elements of nums being 0, 1, 2, 3, and 4 respectively. It does not matter what you leave beyond the returned k (hence they are underscores).
+        """
         # 思考1: 什么时候要这个数？==》1)当它和前面的数不一样的时候，2)当它是第一个数时
         # 思考2：如果时in-place, 这array可不可以覆盖，什么时候可以？==》这个题可以覆盖，因为n的位置是永远less than or equal to i 的
 
         n = 0   # 跟踪最后一个valid的数。 
         for i in range(len(nums)):
-            if i==0 or nums[i] != nums[i-1]: # 第一个肯定要。
+            if i==0 or nums[i] != nums[i-1]: # 第一个肯定要。（不同的题，条件会不一样
                 nums[n] = nums[i]
                 n += 1
-        
+        # i and n 都看作指针
         return n
 
 """
